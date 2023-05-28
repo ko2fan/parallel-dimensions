@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://cbqm2iqwow8fj"]
+
+[ext_resource type="PackedScene" uid="uid://br4lxfy6a1bs8" path="res://Scenes/item.tscn" id="1_4wy0c"]
+[ext_resource type="Texture2D" uid="uid://b603d3de7f536" path="res://Sprites/custom/key.png" id="2_nn6l5"]
+
+[node name="SymbolItem" type="Node2D"]
+
+[node name="Item" parent="." instance=ExtResource("1_4wy0c")]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, -1)
+scale = Vector2(1, 0.958333)
+texture = ExtResource("2_nn6l5")

@@ -1,0 +1,51 @@
+[gd_scene load_steps=6 format=3 uid="uid://ditnpssu61t8g"]
+
+[ext_resource type="Texture2D" uid="uid://mgnm7lh6tr3v" path="res://Sprites/custom/left_window.png" id="1_76aw1"]
+[ext_resource type="Script" path="res://Scripts/npc_text.gd" id="1_lxsp1"]
+[ext_resource type="Texture2D" uid="uid://ciety2hy03iit" path="res://Sprites/custom/middle_window.png" id="2_a5dyi"]
+[ext_resource type="Texture2D" uid="uid://dvpgn3bikk7uy" path="res://Sprites/custom/right_window.png" id="3_dm008"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_n3o1j"]
+font_size = 24
+font_color = Color(0, 0, 0, 1)
+
+[node name="NPCText" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_lxsp1")
+
+[node name="Left" type="Sprite2D" parent="."]
+position = Vector2(-400, 0)
+texture = ExtResource("1_76aw1")
+
+[node name="Middle" type="Sprite2D" parent="."]
+scale = Vector2(2.5, 1)
+texture = ExtResource("2_a5dyi")
+
+[node name="Right" type="Sprite2D" parent="."]
+position = Vector2(400, 0)
+texture = ExtResource("3_dm008")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = -392.0
+offset_top = -56.0
+offset_right = 352.0
+offset_bottom = 56.0
+text = "Hello Patrick"
+label_settings = SubResource("LabelSettings_n3o1j")
+autowrap_mode = 2
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 368.0
+offset_top = 32.0
+offset_right = 399.0
+offset_bottom = 63.0
+text = "OK"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

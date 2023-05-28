@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://crc7gcvvfg5pj"]
+
+[ext_resource type="Texture2D" uid="uid://dcfu6wg2c87bx" path="res://Sprites/custom/floor.png" id="1_pxc7i"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_m5pym"]
+size = Vector2(48, 22)
+
+[node name="Floor" type="StaticBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+z_index = -10
+texture = ExtResource("1_pxc7i")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 13)
+shape = SubResource("RectangleShape2D_m5pym")

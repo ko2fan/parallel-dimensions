@@ -1,0 +1,258 @@
+[gd_scene load_steps=9 format=3 uid="uid://hcyo8q6t7gs5"]
+
+[ext_resource type="PackedScene" uid="uid://bt5fvc8jyrcoa" path="res://Scenes/cyborg_npc.tscn" id="1_abcv1"]
+[ext_resource type="PackedScene" uid="uid://crc7gcvvfg5pj" path="res://Scenes/floor.tscn" id="1_dkjoc"]
+[ext_resource type="PackedScene" uid="uid://o7hsyw5pjj5x" path="res://Scenes/stairs.tscn" id="2_ohgln"]
+[ext_resource type="PackedScene" uid="uid://cbqm2iqwow8fj" path="res://Scenes/symbol_item.tscn" id="4_o48ii"]
+[ext_resource type="PackedScene" uid="uid://ckx3klgxgiqsp" path="res://Scenes/door.tscn" id="5_kwqtj"]
+[ext_resource type="PackedScene" uid="uid://crqll85sat63p" path="res://Scenes/portal.tscn" id="6_6xq0y"]
+[ext_resource type="Shader" path="res://portal_shader.gdshader" id="7_05ymr"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_pq4a7"]
+shader = ExtResource("7_05ymr")
+shader_parameter/size = Vector2(32, 28)
+
+[node name="WorldOne" type="Node2D"]
+
+[node name="cyborg_npc" parent="." instance=ExtResource("1_abcv1")]
+position = Vector2(688, 616)
+scale = Vector2(-1, 1)
+
+[node name="Stairs" parent="." instance=ExtResource("2_ohgln")]
+position = Vector2(1176, 600)
+
+[node name="Floors" type="Node" parent="."]
+
+[node name="Floor" parent="Floors" instance=ExtResource("1_dkjoc")]
+z_index = -10
+position = Vector2(24, 632)
+
+[node name="Floor2" parent="Floors" instance=ExtResource("1_dkjoc")]
+z_index = -10
+position = Vector2(72, 632)
+
+[node name="Floor3" parent="Floors" instance=ExtResource("1_dkjoc")]
+z_index = -10
+position = Vector2(120, 632)
+
+[node name="Floor4" parent="Floors" instance=ExtResource("1_dkjoc")]
+z_index = -10
+position = Vector2(168, 632)
+
+[node name="Floor5" parent="Floors" instance=ExtResource("1_dkjoc")]
+z_index = -10
+position = Vector2(216, 632)
+
+[node name="Floor6" parent="Floors" instance=ExtResource("1_dkjoc")]
+z_index = -10
+position = Vector2(264, 632)
+
+[node name="Floor7" parent="Floors" instance=ExtResource("1_dkjoc")]
+z_index = -10
+position = Vector2(312, 632)
+
+[node name="Floor8" parent="Floors" instance=ExtResource("1_dkjoc")]
+z_index = -10
+position = Vector2(360, 632)
+
+[node name="Floor9" parent="Floors" instance=ExtResource("1_dkjoc")]
+z_index = -10
+position = Vector2(408, 632)
+
+[node name="Floor10" parent="Floors" instance=ExtResource("1_dkjoc")]
+z_index = -10
+position = Vector2(456, 632)
+
+[node name="Floor11" parent="Floors" instance=ExtResource("1_dkjoc")]
+z_index = -10
+position = Vector2(504, 632)
+
+[node name="Floor12" parent="Floors" instance=ExtResource("1_dkjoc")]
+z_index = -10
+position = Vector2(552, 632)
+
+[node name="Floor13" parent="Floors" instance=ExtResource("1_dkjoc")]
+z_index = -10
+position = Vector2(600, 632)
+
+[node name="Floor14" parent="Floors" instance=ExtResource("1_dkjoc")]
+z_index = -10
+position = Vector2(648, 632)
+
+[node name="Floor15" parent="Floors" instance=ExtResource("1_dkjoc")]
+z_index = -10
+position = Vector2(696, 632)
+
+[node name="Floor16" parent="Floors" instance=ExtResource("1_dkjoc")]
+z_index = -10
+position = Vector2(744, 632)
+
+[node name="Floor17" parent="Floors" instance=ExtResource("1_dkjoc")]
+z_index = -10
+position = Vector2(792, 632)
+
+[node name="Floor18" parent="Floors" instance=ExtResource("1_dkjoc")]
+z_index = -10
+position = Vector2(840, 632)
+
+[node name="Floor19" parent="Floors" instance=ExtResource("1_dkjoc")]
+z_index = -10
+position = Vector2(888, 632)
+
+[node name="Floor20" parent="Floors" instance=ExtResource("1_dkjoc")]
+z_index = -10
+position = Vector2(936, 632)
+
+[node name="Floor21" parent="Floors" instance=ExtResource("1_dkjoc")]
+z_index = -10
+position = Vector2(984, 632)
+
+[node name="Floor22" parent="Floors" instance=ExtResource("1_dkjoc")]
+z_index = -10
+position = Vector2(1032, 632)
+
+[node name="Floor23" parent="Floors" instance=ExtResource("1_dkjoc")]
+z_index = -10
+position = Vector2(1080, 632)
+
+[node name="Floor24" parent="Floors" instance=ExtResource("1_dkjoc")]
+z_index = -10
+position = Vector2(1128, 632)
+
+[node name="Floor25" parent="Floors" instance=ExtResource("1_dkjoc")]
+z_index = -10
+position = Vector2(1176, 632)
+
+[node name="Floor26" parent="Floors" instance=ExtResource("1_dkjoc")]
+z_index = -10
+position = Vector2(1224, 632)
+
+[node name="Floor27" parent="Floors" instance=ExtResource("1_dkjoc")]
+z_index = -10
+position = Vector2(1272, 632)
+
+[node name="Floor28" parent="Floors" instance=ExtResource("1_dkjoc")]
+z_index = -10
+position = Vector2(24, 528)
+
+[node name="Floor29" parent="Floors" instance=ExtResource("1_dkjoc")]
+z_index = -10
+position = Vector2(72, 528)
+
+[node name="Floor30" parent="Floors" instance=ExtResource("1_dkjoc")]
+z_index = -10
+position = Vector2(120, 528)
+
+[node name="Floor31" parent="Floors" instance=ExtResource("1_dkjoc")]
+z_index = -10
+position = Vector2(168, 528)
+
+[node name="Floor32" parent="Floors" instance=ExtResource("1_dkjoc")]
+z_index = -10
+position = Vector2(216, 528)
+
+[node name="Floor33" parent="Floors" instance=ExtResource("1_dkjoc")]
+z_index = -10
+position = Vector2(264, 528)
+
+[node name="Floor34" parent="Floors" instance=ExtResource("1_dkjoc")]
+z_index = -10
+position = Vector2(312, 528)
+
+[node name="Floor35" parent="Floors" instance=ExtResource("1_dkjoc")]
+z_index = -10
+position = Vector2(360, 528)
+
+[node name="Floor36" parent="Floors" instance=ExtResource("1_dkjoc")]
+z_index = -10
+position = Vector2(408, 528)
+
+[node name="Floor37" parent="Floors" instance=ExtResource("1_dkjoc")]
+z_index = -10
+position = Vector2(456, 528)
+
+[node name="Floor38" parent="Floors" instance=ExtResource("1_dkjoc")]
+z_index = -10
+position = Vector2(504, 528)
+
+[node name="Floor39" parent="Floors" instance=ExtResource("1_dkjoc")]
+z_index = -10
+position = Vector2(552, 528)
+
+[node name="Floor40" parent="Floors" instance=ExtResource("1_dkjoc")]
+z_index = -10
+position = Vector2(600, 528)
+
+[node name="Floor41" parent="Floors" instance=ExtResource("1_dkjoc")]
+z_index = -10
+position = Vector2(648, 528)
+
+[node name="Floor42" parent="Floors" instance=ExtResource("1_dkjoc")]
+z_index = -10
+position = Vector2(696, 528)
+
+[node name="Floor43" parent="Floors" instance=ExtResource("1_dkjoc")]
+z_index = -10
+position = Vector2(744, 528)
+
+[node name="Floor44" parent="Floors" instance=ExtResource("1_dkjoc")]
+z_index = -10
+position = Vector2(792, 528)
+
+[node name="Floor45" parent="Floors" instance=ExtResource("1_dkjoc")]
+z_index = -10
+position = Vector2(840, 528)
+
+[node name="Floor46" parent="Floors" instance=ExtResource("1_dkjoc")]
+z_index = -10
+position = Vector2(888, 528)
+
+[node name="Floor47" parent="Floors" instance=ExtResource("1_dkjoc")]
+z_index = -10
+position = Vector2(936, 528)
+
+[node name="Floor48" parent="Floors" instance=ExtResource("1_dkjoc")]
+z_index = -10
+position = Vector2(984, 528)
+
+[node name="Floor49" parent="Floors" instance=ExtResource("1_dkjoc")]
+z_index = -10
+position = Vector2(1032, 528)
+
+[node name="Floor50" parent="Floors" instance=ExtResource("1_dkjoc")]
+z_index = -10
+position = Vector2(1080, 528)
+
+[node name="Floor51" parent="Floors" instance=ExtResource("1_dkjoc")]
+z_index = -10
+position = Vector2(1128, 528)
+
+[node name="Floor52" parent="Floors" instance=ExtResource("1_dkjoc")]
+z_index = -10
+position = Vector2(1176, 528)
+
+[node name="Floor53" parent="Floors" instance=ExtResource("1_dkjoc")]
+z_index = -10
+position = Vector2(1224, 528)
+
+[node name="Floor54" parent="Floors" instance=ExtResource("1_dkjoc")]
+z_index = -10
+position = Vector2(1272, 528)
+
+[node name="SymbolItem" parent="." instance=ExtResource("4_o48ii")]
+position = Vector2(992, 520)
+
+[node name="Door" parent="." instance=ExtResource("5_kwqtj")]
+position = Vector2(592, 504)
+
+[node name="Portal" parent="." instance=ExtResource("6_6xq0y")]
+position = Vector2(224, 504)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer"]
+material = SubResource("ShaderMaterial_pq4a7")
+offset_right = 40.0
+offset_bottom = 40.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
