@@ -15,4 +15,4 @@ func _on_body_exited(_body):
 	
 
 func start_conversation():
-	get_tree().root.get_child(0).npc_conversation("Hello Patrick, I am sorry to hear about the death of your friend. Did you know he was not from this world? Go check his room!")
+	get_tree().root.get_child(0).npc_conversation("Hello Player, I am sorry to hear about the death of your friend. Did you know he was not from this world? Go check his room!")

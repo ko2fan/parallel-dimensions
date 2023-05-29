@@ -1,10 +1,11 @@
-[gd_scene load_steps=6 format=3 uid="uid://yjbsm1bvqkud"]
+[gd_scene load_steps=7 format=3 uid="uid://yjbsm1bvqkud"]
 
 [ext_resource type="PackedScene" uid="uid://o7hsyw5pjj5x" path="res://Scenes/stairs.tscn" id="2_txktd"]
 [ext_resource type="PackedScene" uid="uid://crc7gcvvfg5pj" path="res://Scenes/floor.tscn" id="3_5raca"]
 [ext_resource type="PackedScene" uid="uid://cbqm2iqwow8fj" path="res://Scenes/symbol_item.tscn" id="4_rp27b"]
 [ext_resource type="PackedScene" uid="uid://ckx3klgxgiqsp" path="res://Scenes/door.tscn" id="5_qm61p"]
 [ext_resource type="PackedScene" uid="uid://crqll85sat63p" path="res://Scenes/portal.tscn" id="6_33ih1"]
+[ext_resource type="PackedScene" uid="uid://bnr5hi6ur682h" path="res://Scenes/biker_npc.tscn" id="6_rrgul"]
 
 [node name="WorldTwo" type="Node2D"]
 
@@ -348,4 +349,8 @@ position = Vector2(224, 504)
 
 [node name="Stairs2" parent="." instance=ExtResource("2_txktd")]
 position = Vector2(72, 496)
+scale = Vector2(-1, 1)
+
+[node name="biker_npc" parent="." instance=ExtResource("6_rrgul")]
+position = Vector2(255, 410)
 scale = Vector2(-1, 1)
