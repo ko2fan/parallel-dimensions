@@ -5,6 +5,7 @@ extends CharacterBody2D
 @onready var animation_player = $AnimationPlayer
 @onready var sprite = $Sprite2D
 @onready var game = get_node("..")
+@onready var Inventory = get_node("../UI/Inventory")
 
 var inventory : Array
 var item_to_take = null
@@ -98,6 +99,7 @@ func unset_travel():
 func take_item(item):
 	inventory.append(item)
 	item.get_node("Item").make_sprite_invisible()
+	Inventory.show_icon()
 
 func talk_to_npc(npc):
 	npc.start_conversation()

@@ -1,5 +1,9 @@
-[gd_scene format=3 uid="uid://feu7ehuw17a2"]
+[gd_scene load_steps=2 format=3 uid="uid://feu7ehuw17a2"]
+
+[ext_resource type="Texture2D" uid="uid://b603d3de7f536" path="res://Sprites/custom/key.png" id="1_cds3d"]
 
 [node name="Icon" type="Node2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_cds3d")
